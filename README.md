@@ -1,6 +1,6 @@
 # EVENTEX
 
-https://travis-ci.org/VictorGabrielRM/wttd-eventex.svg?branch=master
+[![Build Status](https://travis-ci.org/VictorGabrielRM/wttd-eventex.svg?branch=master)](https://travis-ci.org/VictorGabrielRM/wttd-eventex)
 Sistema desenvolvido durante o curso WTTD.
 
 ## Como desenvolver
