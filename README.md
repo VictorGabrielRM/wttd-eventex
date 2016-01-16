@@ -17,7 +17,7 @@ cd wttd
 python -m venv .wttd
 source .wttd/bin/activate
 pip install -r requeriments.txt
-cp contrib/env_sample .env
+cp contrib/venv_sample .env
 python manage.py test
 ```
 
