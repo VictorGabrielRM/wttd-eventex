@@ -18,7 +18,7 @@ class TalkListGet(TestCase):
 
         t1.speakers.add(speaker)
         t2.speakers.add(speaker)
-        
+
         self.resp = self.client.get(r('talk_list'))
 
     def test_get(self):
@@ -47,3 +47,11 @@ class TalkListGet(TestCase):
         for key in variables:
             with self.subTest():
                 self.assertIn(key, self.resp.context)
+
+
+class TalkListGetEmpty(TestCase):
+    def test_get_empty(self):
+        response = self.client.get(r('talk_list'))
+
+        self.assertContains(response, 'Ainda não exitem palestras de manhã')
+        self.assertContains(response, 'Ainda não exitem palestras de tarde')
