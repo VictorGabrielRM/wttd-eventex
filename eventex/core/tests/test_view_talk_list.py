@@ -53,5 +53,5 @@ class TalkListGetEmpty(TestCase):
     def test_get_empty(self):
         response = self.client.get(r('talk_list'))
 
-        self.assertContains(response, 'Ainda não exitem palestras de manhã')
-        self.assertContains(response, 'Ainda não exitem palestras de tarde')
+        self.assertContains(response, 'Ainda não exitem palestras de manhã.')
+        self.assertContains(response, 'Ainda não exitem palestras de tarde.')
